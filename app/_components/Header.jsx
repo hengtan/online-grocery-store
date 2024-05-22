@@ -34,7 +34,6 @@ function Header() {
         <div className="p-5 shadow-sm flex justify-between">
             <div className="flex items-center gap-8">
                 <Image src="/logo.png" alt="logo" width={150} height={100}/>
-
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <h2
