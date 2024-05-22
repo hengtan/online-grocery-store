@@ -26,7 +26,9 @@ function Header() {
     */
     const getCategoryList = () => {
         GlobalApi.getCategory().then(res => {
-            setCategoryList(res.data.data)
+            const orderedData = res.data.data.sort((a, b) =>
+                a.attributes.name.localeCompare(b.attributes.name));
+            setCategoryList(orderedData);
         })
     }
 
